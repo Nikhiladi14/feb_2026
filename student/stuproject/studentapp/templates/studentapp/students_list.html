@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student List</title>
+</head>
+<body>
+
+    <h1>Student List</h1>
+
+    <a href="/studentapp/">Add New Student</a>
+    <br><br>
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Roll</th>
+            <th>Class</th>
+            <th>Age</th>
+            <th>Contact</th>
+            <th>Actions</th>
+        </tr>
+
+        {% for student in students %}
+        <tr>
+            <td>{{ student.name }}</td>
+            <td>{{ student.roll_number }}</td>
+            <td>{{ student.student_class }}</td>
+            <td>{{ student.age }}</td>
+            <td>{{ student.parent_contact }}</td>
+            <td>
+                <a href="/studentapp/update/{{ student.id }}">Edit</a>
+                |
+                <a href="/studentapp/delete/{{ student.id }}">Delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</body>
+</html>

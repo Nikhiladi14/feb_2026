@@ -1,0 +1,15 @@
+
+-------------------------------
+PNR: 252410
+Train: 12737
+From: Tadepalligudem
+To: Secunderabad
+Journey Date: 12-03-2026
+Journey Time: 23:00
+Passenger Name: nikhil
+Age: 21
+Gender: male
+Phone: 1234567890
+Status: CONFIRMED
+Berth: Middle
+Booked On: 2026-03-12 15:36:36.783172

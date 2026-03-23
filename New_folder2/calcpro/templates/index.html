@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+       <h2>Calculator</h2>
+
+
+    <form method="post">
+      {% csrf_token %}
+      <label for="fname">A:</label><br />
+      <input type="text" id="fname" name="a" /><br />
+      <label for="lname">B:</label><br />
+      <input type="text" id="lname" name="b" /><br /><br />
+      <label>Select Operator</label><br />
+      <select name="opr">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+        <option value="**">**</option>
+      </select>
+      <br />
+      <button type="submit">submit</button><br />
+      <input type="text" value="{{solution}}" />
+    </form>
+</body>
+</html>
